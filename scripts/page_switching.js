@@ -12,7 +12,7 @@ function switchToPotrait() {
 
 function toHomePage() {
     // same page pe kholne ke liye location.href
-    location.href = "../html/MainPage.html"
+    location.href = "../index.html"
 }
 
 function onInsta() {
