@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/Index.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            background-color: #470604;
+            border: 10px solid #FFFFFF;
+            color: #fff;
+            /* Added text color for better visibility */
+
+        }
+
+        .smallText {
+            font-size: 20px;
+            color: white;
+            font-family: monospace;
+        }
+
+        .gallery-item {
+            width: 300px;
+            padding: 3px;
+            border: 4px solid white;
+        }
+
+        .bottombutton {
+            height: 40px;
+            width: 80px;
+            background-color: white;
+            color: black;
+            margin-top: 70px;
+            text-align: center;
+            margin-left: 20px;
+            border: 4px solid white;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="gallery" class="py-5">
+        <div class="container">
+            <h1 class="text-center mb-4">Portrait</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="../Assets/portrait/po1.png" alt="Mehndi Design 4" class="img-fluid">
+                        <div class="smallText">price-650/-Figure</div><br>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="../Assets/portrait/po2.png" alt="Mehndi Design 5" class="img-fluid">
+                        <div class="smallText">price-600/-Figure</div><br>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="../Assets/portrait/po3.png" alt="Mehndi Design 5" class="img-fluid">
+                        <div class="smallText">price-600/-Figure</div><br>
+
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section id="gallery" class="py-5">
+        <div class="container">
+            <h1 class="text-center mb-4">Mehndi Tattoo</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="../Assets/tattoo/t1.png" alt="Mehndi Design 4" class="img-fluid">
+                        <div class="smallText">price-100/-Figure</div><br>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="../Assets/tattoo/t2.png" alt="Mehndi Design 5" class="img-fluid">
+                        <div class="smallText">price-150/-Figure</div><br>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="../Assets/tattoo/t3.png" alt="Mehndi Design 5" class="img-fluid">
+                        <div class="smallText">price-100/-Figure</div><br>
+
+                    </div>
+                </div>
+            </div>
+            
+            <table>
+                <tr>
+                    <td>
+                        <div onclick="toHomePage()" class="bottombutton">Home<div></div>
+                    </td>
+                    <td>
+                        <div onclick="switchToBrideGroom()" class="bottombutton">Bride</div>
+                    </td>
+                    <!-- <td>
+                        <div onclick="ordernow()" class="bottombutton">OrderNow<div></div>
+                    </td> -->
+                </tr>
+            </table>
+    </section>
+    <script src="../scripts/page_switching.js"></script>
+    <script src="../scripts/watson-chat.js"></script>
+</body>
+
+</html>

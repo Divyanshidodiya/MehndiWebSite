@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mehndi Booking</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #470607;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+
+    }
+
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 400px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    input,
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+
+    button {
+      background-color: #4caf50;
+      color: #fff;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+
+<body>
+
+  <form action="#" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address" required>
+
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date" required>
+
+    <label for="mehndiType">Mehndi Type:</label>
+    <select id="mehndiType" name="mehndiType" required>
+      <option value="bridal">Bridel/groom</option>
+      <option value="traditional">Designer</option>
+      <option value="Arabic">Arabic</option>
+      <option value="modern">Bharma</option>
+      <option value="modern">protrait</option>
+    </select>
+    <div>
+      <table>
+        <tr>
+
+          <td>
+            <button type="submit" onclick="payment()">Book Now</button>
+            <div>
+          </td>
+  </form>
+  <script src="../scripts/page_switching.js"></script>
+  <script src="../scripts/watson-chat.js"></script>
+
+</body>
+
+</html>

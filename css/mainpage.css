@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #470604;
+    border: 10px solid #FFFFFF;
+    color: #fff;
+}
+
+.text-center mb-4 {
+    color: #0000FF;
+    text-align: center;
+}
+
+.img {
+    border: 10px solid #FFFFFF;
+}
+
+.gallery-item {
+    border: 10px solid #FFFFFF;
+}
+
+.bigText {
+    display: inline;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+}
+
+.smallText {
+    font-size: 20px;
+    padding-top: 10px;
+    color: white;
+    font-family: monospace;
+    place-items: center;
+}
+
+.header {
+    background-color:#470604;
+    margin-left: 50px;
+}
+
+.title {
+    white-space: nowrap;
+    font-size: 55px;
+    margin-left: 50px;
+}
+
+.spacer {
+    width: 100px;
+}
+
+h3 {
+    font-size: 40px;
+    color: #003366;
+}
+
+.social-links {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    width: 60px;
+    text-align: right;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+}
+
+
+.social {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border-radius: 25px;
+}
+
+.footer {
+    width: 100%;
+}
+
+.footerdiv {
+    width: 100%;
+    text-align: center;
+}
+
+.bookbutton {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+    cursor: pointer;
+    color:  black;
+    border: 2px solid black;
+    background-color: #FFFFFF;
+}
+.col-md-6{
+    padding-left: 100px;
+    border: "10px solid #FFFFFF";
+    width: "100px";
+    height: "100px";
+}
+
+.logoDiv {
+    margin: auto;
+    width: 300px;
+    height: 300px;
+}
+
+.img_flui_rounded {
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            background-color: #470607;
+            border: 10px solid #FFFFFF;
+            color: #fff;
+            /* Added text color for better visibility */
+
+        }
+
+        .smallText {
+            font-size: 20px;
+            color: white;
+            font-family: monospace;
+        }
+
+        .gallery-item {
+            width: 300px;
+            padding: 3px;
+            border: 4px solid white;
+        }
+
+        .bottombutton {
+            height: 40px;
+            width: 80px;
+            color: black;
+            background-color: white;
+            margin-top: 70px;
+            margin-left: 20px;
+            text-align: center;
+            border: 4px solid white;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="gallery" class="py-5">
+        <div class="container">
+            <h1 class="text-center mb-4">Bride</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="../Assets/hand/hand4.png" alt="Mehndi Design 4" class="img-fluid">
+                        <div class="smallText">Price-5100</div><br>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="../Assets/hand/hand1.jpg" alt="Mehndi Design 5" class="img-fluid">
+                        <div class="smallText">Price-5100</div><br>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="../Assets/hand/hand3.png" alt="Mehndi Design 5" class="img-fluid">
+                        <div class="smallText">Price-5100</div><br>
+
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section id="gallery" class="py-5">
+        <div class="container">
+            <h1 class="text-center mb-4"></h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="../Assets/foots/foot1.png" alt="Mehndi Design 4" class="img-fluid">
+
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="../Assets/foots/foot2.png" alt="Mehndi Design 5" class="img-fluid">
+
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="../Assets/foots/foot3.png" alt="Mehndi Design 5" class="img-fluid">
+
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section id="gallery" class="py-5">
+        <div class="container">
+            <h1 class="text-center mb-4">Groom</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="../Assets/groom/gr1.png" alt="Mehndi Design 4" class="img-fluid">
+                        <div class="smallText">Price-2100</div><br>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="../Assets/groom/gr2.png" alt="Mehndi Design 5" class="img-fluid">
+                        <div class="smallText">Price-2100</div><br>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="../Assets/groom/gr3.png" alt="Mehndi Design 5" class="img-fluid">
+                        <div class="smallText">Price-2100</div><br>
+
+                    </div>
+                </div>
+            </div>
+            <table>
+                <tr>
+                    <td>
+                        <div onclick="toHomePage()" class="bottombutton">Home<div></div>
+                    </td>
+                    <td>
+                        <div onclick="switchToBasic()" class="bottombutton">Basic</div>
+                    </td>
+                    <td>
+                        <div onclick="switchToPotrait()" class="bottombutton">Potrait</div>
+                    </td>
+                    <!-- <td>
+                        <div onclick="ordernow()" class="bottombutton">OrderNow</div>
+                    </td> -->
+                </tr>
+            </table>
+    </section>
+    <script src="../scripts/page_switching.js"></script>
+    <script src="../scripts/watson-chat.js"></script>
+</body>
+
+</html>

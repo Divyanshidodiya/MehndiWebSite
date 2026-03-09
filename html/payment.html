@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Options</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: #470607;
+      }
+
+      .payment-form {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        width: 300px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 8px;
+      }
+
+      select,
+      input {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 16px;
+        box-sizing: border-box;
+      }
+
+      button {
+        background-color: #4caf50;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="payment-form">
+      <h2>Choose Payment Option</h2>
+      <form action="/process-payment" method="post">
+        <label for="paymentMethod">Select Payment Method:</label>
+        <select id="paymentMethod" name="paymentMethod">
+          <option value="phonePay">Phone Pay</option>
+          <option value="paytm">Paytm</option>
+          <option value="gpay">Google Pay</option>
+          <option value="creditCard">Credit Card</option>
+          <option value="debitCard">Debit Card</option>
+        </select>
+
+        <!-- Add additional fields based on the selected payment method -->
+        <div id="additionalFields"></div>
+
+        <button type="submit">Proceed to Pay</button>
+      </form>
+    </div>
+
+    <script>
+      document
+        .getElementById("paymentMethod")
+        .addEventListener("change", function () {
+          var paymentMethod = this.value;
+          var additionalFieldsContainer =
+            document.getElementById("additionalFields");
+
+          // Clear previous additional fields
+          additionalFieldsContainer.innerHTML = "";
+
+          // Add additional fields based on the selected payment method
+          if (paymentMethod === "creditCard" || paymentMethod === "debitCard") {
+            var cardNumberLabel = document.createElement("label");
+            cardNumberLabel.textContent = "Card Number:";
+            additionalFieldsContainer.appendChild(cardNumberLabel);
+
+            var cardNumberInput = document.createElement("input");
+            cardNumberInput.type = "text";
+            cardNumberInput.name = "cardNumber";
+            additionalFieldsContainer.appendChild(cardNumberInput);
+
+            // Add more fields as needed for card payments
+          }
+        });
+    </script>
+    <script src="../scripts/page_switching.js"></script>
+    <script src="../scripts/watson-chat.js"></script>
+  </body>
+</html>
